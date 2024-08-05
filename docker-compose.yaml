@@ -1,0 +1,22 @@
+version: "3"
+services:
+  envoy-direct:
+    build: .
+    entrypoint: /bin/sh -c '/usr/local/bin/envoy -c /etc/envoy/envoy.yaml --log-level warning --service-cluster envoy --service-node envoy > /var/log/envoy/error.log 2>&1'
+    expose:
+      - "80"
+      - "443"
+    container_name: envoy-direct
+    network_mode: host
+    restart: always
+    volumes:
+      - ./envoy.yaml:/etc/envoy/envoy.yaml
+      - ./coraza.wasm:/etc/envoy/coraza.wasm
+      - ./certificate1.crt:/etc/envoy/certificate1.crt
+      - ./private1.key:/etc/envoy/private1.key
+      - ./ca_bundle1.crt:/etc/envoy/ca_bundle1.crt
+      - ./certificate2.crt:/etc/envoy/certificate2.crt
+      - ./private2.key:/etc/envoy/private2.key
+      - ./ca_bundle2.crt:/etc/envoy/ca_bundle2.crt
+      - ./access.log:/var/log/envoy/access.log
+      - ./error.log:/var/log/envoy/error.log
