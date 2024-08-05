@@ -4,10 +4,10 @@
 #### Langkah Pertama
 
 Pastikan certificate SSL telah dimiliki dan dimasukan didalam satu folder yang sama dengan file installer. Pastikn penamaan file seperti berikut
-```http
+```bash
   ca_bundle1.crt certificate1.crt private1.key
 ```
-```http
+```bash
   ca_bundle2.crt certificate2.crt private2.key
 ```
 
@@ -15,18 +15,18 @@ Selanjutnya pindahkan kedalam folder **ProteksiCoraza**
 
 #### Langkah Kedua
 Clone Repository :
-```http
+```bash
   git clone https://github.com/blackabed/ProteksiCoraza
   cd ProteksiCoraza
 ```
 
 Jalankan Command Berikut : 
-```http
+```bash
   sudo chmod +x WAF_Run.sh
 ```
 
 Dilanjutkan dengan perintah :
-```http
+```bash
   sudo ./WAF_Run.sh
 ```
 
