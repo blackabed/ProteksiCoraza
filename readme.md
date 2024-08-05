@@ -3,7 +3,14 @@
 
 #### Langkah Pertama
 
-Pastikan certificate SSL telah dimiliki dan dimasukan didalam satu folder yang sama dengan file installer. Pastikn penamaan file seperti berikut
+Clone Repository :
+```bash
+  git clone https://github.com/blackabed/ProteksiCoraza
+  cd ProteksiCoraza
+```
+
+Selanjutnya, pastikan certificate SSL telah dimiliki dan dimasukan didalam satu folder yang sama dengan file installer. Pastikn penamaan file seperti berikut
+
 ```bash
   ca_bundle1.crt certificate1.crt private1.key
 ```
@@ -14,11 +21,6 @@ Pastikan certificate SSL telah dimiliki dan dimasukan didalam satu folder yang s
 Selanjutnya pindahkan kedalam folder **ProteksiCoraza**
 
 #### Langkah Kedua
-Clone Repository :
-```bash
-  git clone https://github.com/blackabed/ProteksiCoraza
-  cd ProteksiCoraza
-```
 
 Jalankan Command Berikut : 
 ```bash
