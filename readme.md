@@ -11,9 +11,11 @@ Clone Repository :
 
 Selanjutnya, pastikan certificate SSL telah dimiliki dan dimasukan didalam satu folder yang sama dengan file installer. Pastikn penamaan file seperti berikut
 
+Penamaan untuk sertifikat domain pertama :
 ```bash
   ca_bundle1.crt certificate1.crt private1.key
 ```
+Penamaan untuk sertifikat domain kedua :
 ```bash
   ca_bundle2.crt certificate2.crt private2.key
 ```
