@@ -30,6 +30,7 @@ Jalankan Command Berikut :
 Dilanjutkan dengan perintah :
 ```bash
   sudo ./WAF_Run.sh
+  Pilih 1 lakukan Konfigurasi IP
 ```
 
 Akan muncul prompt untuk melakukan inputan 
@@ -42,7 +43,7 @@ Akan muncul prompt untuk melakukan inputan
 
 `IP address for backend_service2` : Masukan IP Origins Server yang akan dilindungi (Contoh: 10.16.1.3)
 
-
+Setelah IP Di konfigurasi selanjutnya pilih **2** untuk menjalankan WAF
 
 
 
